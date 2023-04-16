@@ -20,6 +20,7 @@ const newGenQoutes = function () {
 };
 newGenQoutes();
 
+
 btnNext.addEventListener("click", () => {
   if (newQuoteNum !== 10) {
     newQuoteNum++;
