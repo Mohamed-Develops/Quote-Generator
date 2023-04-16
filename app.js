@@ -13,7 +13,7 @@ const newGenQoutes = function () {
     fetch("http://api.quotable.io/random")
       .then((res) => res.json())
       .then((data) => {
-        quotesObj[`quote${i}`] = data.content + `<br>` + " - " + data.author;
+        quotesObj[`quote${i}`] = '" '+data.content+ ' "' + `<br>` + " - " + data.author;
         holdNewQuote.innerHTML = quotesObj.quote1;
       });
   }
